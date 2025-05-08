@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page 3</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #8dbf81;
+  overflow-x: hidden;
+}
+
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+div {
+  height: 0.1px;
+ animation-name: example;
+  animation-duration: 6s;
+   animation-direction: reverse;
+}
+
+@keyframes example {
+  from {background-color: #8dbf81;}
+  to {background-color: rgb(147, 248, 252);}
+}
+.sidenav a:hover {
+  background-color: rgb(147, 248, 252);
+  color: black;
+}
+
+.content {
+  margin-left: 125px;
+  padding-left: 15px;
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="Ch14Project_Home.htm">Featured</a>
+  <a href="Ch14Project_Page2.htm">About Us</a>
+  <a href="Index.htm">Home</a>
+  
+</div>
+
+<div class="content">
+  <h2>About Us</h2>
+  <h3>Weve been in the business almost as long as gamers have wanted to catch a meal and game with friends. dating back almost two decades our dedicated dev team of chefs and engineers have been providing excellence in this cummulative field. </h3><br>
+ 
+  <p> Find us on social media and sign up below!</p>
+  <p> Enjoy a free 10% off discount for new subscribers. stay up to date with the latest deals and news. Buenos Chicken & Games</p>
+  <form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Churchus"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Chickenius"><br>
+  <label for="email">E mail:</label><br>
+  <input type="email" id="email" name="email" value="YourEmailHere"><br><br>
+    
+  <input type="submit" value="Submit">
+</form> 
+</div>
+
+</body>
+</html>
