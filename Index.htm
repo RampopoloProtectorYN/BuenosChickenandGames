@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page 1</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  div {
+    width: auto;
+    height: 100%;
+  background-color: rgba(255, 0, 0, 0);
+  animation-name: example;
+  animation-duration: 6s;
+  animation-direction: reverse;
+}
+
+@keyframes example {
+  from {background-color: #8dbf81;}
+  to {background-color: rgb(147, 248, 252);}
+}
+* {
+  box-sizing: border-box;
+}
+.flex-container {
+  display: flex;
+  background-color: rgba(30, 144, 255, 0);
+}
+  .flex-container :hover {
+    background-color: aqua
+  }
+.flex-container > div {
+  background-color: #8dbf81;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sidenav {
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #8dbf81;
+  overflow-x: hidden;
+}
+
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+.sidenav a:hover {
+  background-color: rgb(147, 248, 252);
+  color: black;
+}
+
+.content {
+  margin-left: 125px;
+  padding-left: 15px;
+}
+ .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1px;
+  background-color: rgba(147, 248, 252, 0);
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: #8dbf81;
+  color: #000;
+  padding: 20px;
+  font-size: 25px;
+  text-align: left;
+}
+  .grid-container :hover {
+    background-color: aqua
+  }
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="Ch14Project_Home.htm">Featured</a>
+  <a href="Ch14Project_Page2.htm">About Us</a>
+  <a href="Index.htm">Home</a>
+</div>
+
+<div class="content">
+  <h2>BUENOS CHICKEN AND GAMES!!!</h2>
+  <h3>One of the leading names in entertainment and dining at this hybrid establishment.</h3>
+  <p>We offer a wide array of games and rides as well as a fun atmosphere. Our chef specialties are everyfrom of chicken and nothing else. If you like chicken and enjoy games even more why not come down and have some fun. we offer an array of games to fit every demographic and dare say we have something for everybody.   </p> <br>
+  <p>We have three major locations across the US and can be found in New York, Texas, and California. whether you live on the east, west or Central, we have you covered. </p><br>
+  <div class="flex-container">
+  <div>NY</div>
+  <div>Tx</div>
+  <div>Ca</div>  
+</div> <br>
+  <div class="grid-container">
+  <div>New York</div>
+  <div>East</div>
+  <div>Texas</div>  
+  <div>Central</div>
+  <div>California</div>
+  <div>West</div>  
+ 
+</div>
+</div>
+
+</body>
+</html>
